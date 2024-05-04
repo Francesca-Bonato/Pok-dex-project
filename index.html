@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Francesca Bonato" />
+    <meta name="title" content="" />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <!-- Title -->
+    <title>My Pokédex</title>
+    <!-- File CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Main Container-->
+    <div class="wrapper">
+      <!-- Main Content Section -->
+      <main>
+        <h1>Gotta catch'em all!</h1>
+        <section class="pokedex">
+          <img class="pokedex-img" src="./assets/Pokedex.png" alt="A red pokédex gameboy" />
+          <section class="query-section">
+            <label for="pokemon-input">
+              Search your pokémon by name or number:
+            </label>
+            <div class="pokemon-query">
+              <input type="text" name="pokemonInput" id="pokemon-input" />
+              <button type="submit" id="query-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.2em"
+                  height="1.2em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5q0-1.875-1.312-3.187T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14"
+                  />
+                </svg>
+              </button>
+            </div>
+          </section>
+          <section class="pokemon-card hidden"></section>
+        </section>
+      </main>
+    </div>
+    <!-- End of Main Container-->
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p> My Pokédex <span id="copyright-year"></span> &copy; Francesca Bonato</p>
+    </footer>
+    <!-- File JS -->
+    <script src="index.js"></script>
+  </body>
+</html>
